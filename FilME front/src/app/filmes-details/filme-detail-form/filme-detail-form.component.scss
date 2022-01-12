@@ -1,0 +1,33 @@
+.top {
+    height: 100px;
+    text-align: center;
+    padding-top: 49px;
+}
+.mname{
+    font-size: 50px;
+}
+.mname2{
+    font-size: 50px;
+    color: yellow;
+}
+.button{
+    padding-top: 10px;
+}
+.subdivs{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+input[type=text]{
+    width: 20%;
+}
+input{
+    width: 1%;
+}
+.bton{
+    font-weight: bold;
+    color: white;
+    background-color: #0066ff;
+}
+.bton:hover{
+    background-color: #0000ff;
+}

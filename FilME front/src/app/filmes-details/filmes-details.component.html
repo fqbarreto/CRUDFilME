@@ -1,0 +1,29 @@
+<div>
+    <div>
+        <app-filme-detail-form></app-filme-detail-form>
+    </div>
+    <div>
+        <table class="tb" align="center">
+            <thead class="hd">
+                <tr>
+                    <th>ID:</th>
+                    <th>Nome:</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="by">
+                <tr *ngFor="let pd of service.filmesList" >
+                    <td align="center">{{pd.filmeId}}</td>
+                    <td align="center">{{pd.nome}}</td>
+                    <button mat-icon-button (click)="onDelete(pd.filmeId)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                    <button mat-icon-button (click)="populateForm(pd)">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

@@ -1,0 +1,21 @@
+<div class="top" align="center">
+    <strong class="mname">Fil</strong>
+    <strong class="mname2">ME</strong>
+</div>
+<div>
+    <form class="formzin" #form="ngForm" (submit)="onSubmit(form)" align="center">
+        <div class="subdivs">
+            <label for="nome">Nome</label>
+            <br>    
+            <input id="nome" class="nome" type=text [(ngModel)]="service.data.nome" name="nome">
+        </div>
+        <div>
+            <label for="ID">ID</label>
+            <br>
+            <input id="id" class="id" [(ngModel)]="service.data.filmeId" name="id">
+        </div>
+        <div class="button">
+            <button type="submit" class="bton" mat-flat-button>Adicionar</button>
+        </div>
+    </form>
+</div>
